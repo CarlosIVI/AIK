@@ -5,7 +5,6 @@ sudo yum install -y git
 mkdir -p /srv/app
 sudo chmod 777 /srv/app
 git clone https://github.com/CarlosIVI/AIK /srv/app
-
 #install salt
 sudo yum install -y https://repo.saltstack.com/yum/redhat/salt-repo-latest.el7.noarch.rpm
 sudo yum clean expire-cache;sudo yum -y install salt-minion; chkconfig salt-minion off

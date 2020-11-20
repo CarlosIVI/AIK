@@ -1,6 +1,6 @@
 base:
   'roles:frontend':
-    - match: grain
-    - nodejs
+    - match: aikPortal
     - aik-ui
     - aik-back
+    - nodejs
