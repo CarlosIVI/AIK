@@ -1,0 +1,15 @@
+[Unit]
+Description= Aik Frontend
+
+[Service]
+ExecStart=/srv/app/Portal/aik-app-ui/server.js
+Restart=always
+User=nobody
+# Note Debian/Ubuntu uses 'nogroup', RHEL/Fedora uses 'nobody'
+Group=nobody
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/srv/app/Portal/aik-app-ui
+
+[Install]
+WantedBy=multi-user.target
