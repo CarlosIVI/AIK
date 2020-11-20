@@ -66,7 +66,8 @@ app.get('/experience', function(req, res){
   ]
   res.json(experience);
 })
-console.log("server listening through port: "+process.env.PORT);
+
 // Launch our API Server and have it listen on port 3000.
 app.listen(process.env.PORT || 3000);
+console.log("server listening through port: "+process.env.PORT);
 module.exports = app;
