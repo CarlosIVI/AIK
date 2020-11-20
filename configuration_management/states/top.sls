@@ -3,4 +3,4 @@ base:
     - match: grain
     - nodejs
     - aik-ui
-    - aik-api
+    - aik-back
