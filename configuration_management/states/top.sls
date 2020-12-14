@@ -4,4 +4,3 @@ base:
     - aik-ui
     - aik-back
     - nodejs
-    - jenkins
