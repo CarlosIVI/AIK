@@ -6,7 +6,6 @@ node {
 
     stage "Checkout Git repo"
         checkout scm
-
     stage "Run test"
         sh "docker run -v \$(pwd)/Portal/aik-app-ui:/data --rm usemtech/nodejs-mocha npm install"
         sh "docker run -v \$(pwd)/Portal/aik-app-ui:/data --rm usemtech/nodejs-mocha npm install chai chai-http"
